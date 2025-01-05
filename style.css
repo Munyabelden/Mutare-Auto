@@ -227,6 +227,31 @@ nav {
   text-align: center;
 }
 
+/* Responsive Design for Tablet (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .about,
+    .services-grid {
+        padding-inline: 10%;
+    }
+
+    .hero {
+        margin-inline: 10%;
+    }
+}
+
+/* Responsive Design for Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .about,
+    .services-grid {
+        padding-inline: 5%;
+    }
+
+    .hero {
+        margin-inline: 5%;
+    }
+}
+
+
 footer {
     background-color: #333;
     color: white;
@@ -241,7 +266,8 @@ footer {
        padding-inline: 5%;
     }
     nav {
-      margin: 20px 0;
+      margin-top: 20px;
+      margin-inline: 5%;
     }
 
     .nav-links {
@@ -264,6 +290,7 @@ footer {
         -moz-transition: all 300ms ease-in-out;
         -ms-transition: all 300ms ease-in-out;
         -o-transition: all 300ms ease-in-out;
+        z-index: 1000;
 }
 
     .burger {
