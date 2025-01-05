@@ -13,11 +13,17 @@
   -o-transition: all 300ms ease-in-out;
 }
 
+:root {
+  --primary-color: rgb(77, 138, 203);
+  --secondary-color: #fda03c;
+  --primary-background: rgba(41, 44, 48, 0.6);
+}
+
 header {
-  background: rgb(63, 70, 79);
-  background-image: url('./images/19717.jpg');
+  background: rgba(63, 70, 79, 0.6);
+  background-image: url('./images/8959.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: bottom center;
   height: 100vh;
   width: 100%;
   display: block;
@@ -27,7 +33,7 @@ header {
 }
 
 nav {
-  background-color: #292c30;
+  background-color: var(--primary-background);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -46,12 +52,12 @@ nav {
 
 .logo h1 {
   margin: 0;
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 32px;
+  font-weight: 800;
 }
 
 .logo h1 span {
-  color: rgb(77, 138, 203);
+  color: var(--primary-color);
 }
 
 .nav-links {
@@ -89,7 +95,7 @@ nav {
   justify-content: center;
   align-items: center;
   padding-top: 180px;
-  background: #292C30;
+  background: var(--primary-background);
   margin-inline: 15%;
   height: 80vh;
 }
@@ -100,7 +106,7 @@ nav {
 }
 
 .cta {
-  background-color: rgb(61, 109, 160);
+  background-color: var(--primary-color);
   padding: 10px 20px;
   color: white;
   text-decoration: none;
@@ -109,7 +115,7 @@ nav {
 }
 
 .cta:hover {
-  background-color: #c60;
+  background-color: var(--secondary-color);
 }
 
 /* Services Section */
@@ -126,11 +132,14 @@ nav {
 
 /* Container for services grid */
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 50px 15%;
-    background-color: rgb(253, 176, 60);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 50px 15%;
+  background-color: rgb(50, 64, 78);
+  /* background-image: url('./images/16091.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; */
 }
 
 /* Service card styling */
@@ -138,7 +147,7 @@ nav {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
