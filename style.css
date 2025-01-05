@@ -14,7 +14,7 @@
 }
 
 header {
-  background: rgb(79, 72, 63);
+  background: rgb(63, 70, 79);
   background-image: url('./images/19717.jpg');
   background-size: cover;
   background-position: center;
@@ -27,7 +27,7 @@ header {
 }
 
 nav {
-  background-color: #333;
+  background-color: #34383e;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -50,7 +50,7 @@ nav {
 }
 
 .logo h1 span {
-  color: rgb(255, 178, 62);
+  color: rgb(77, 138, 203);
 }
 
 .nav-links {
@@ -96,7 +96,7 @@ nav {
 }
 
 .cta {
-  background-color: #f90;
+  background-color: rgb(61, 109, 160);
   padding: 10px 20px;
   color: white;
   text-decoration: none;
