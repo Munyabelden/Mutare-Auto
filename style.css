@@ -191,7 +191,7 @@ nav {
 .about {
   padding: 100px 15%;
   text-align: center;
-  background-color: #b9c1c1;
+  background-color: #d8dede;
 }
 
 .about h2 {
@@ -200,7 +200,7 @@ nav {
     z-index: 2;
     font-size: 3rem;
     font-weight: 600;
-    color: rgb(123, 149, 179);
+    color: rgb(84, 115, 151);
 }
 
 .about h2::after {
@@ -209,9 +209,9 @@ nav {
     z-index: -1; 
     left: 0;
     right: 0;
-    bottom: -5px; 
+    bottom: -3px; 
     height: 30px; 
-    background-color: #292c30; 
+    background-color: #041225; 
     transform: skewX(-10deg); 
 }
 
