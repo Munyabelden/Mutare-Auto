@@ -189,15 +189,42 @@ nav {
 
 /* About Us Section */
 .about {
-    padding: 50px;
-    text-align: center;
-    background-color: #eaeaea;
+  padding: 100px 15%;
+  text-align: center;
+  background-color: #b9c1c1;
+}
+
+.about h2 {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(123, 149, 179);
+}
+
+.about h2::after {
+    content: "";
+    position: absolute;
+    z-index: -1; 
+    left: 0;
+    right: 0;
+    bottom: -5px; 
+    height: 30px; 
+    background-color: #292c30; 
+    transform: skewX(-10deg); 
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 20px;
 }
 
 .contact {
-    padding: 50px;
-    background-color: #f4f4f4;
-    text-align: center;
+  padding: 50px;
+  background-color: #f4f4f4;
+  text-align: center;
 }
 
 footer {
