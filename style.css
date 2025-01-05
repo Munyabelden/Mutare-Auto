@@ -1,0 +1,241 @@
+*,
+*::after,
+*::before {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+}
+
+header {
+  background: rgb(79, 72, 63);
+  background-image: url('./images/19717.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  padding: 40px;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  margin: 20px 15%;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.logo h1 span {
+  color: rgb(255, 178, 62);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+/* Hero Section */
+.hero {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 230px;
+}
+
+.hero h2 {  
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.cta {
+  background-color: #f90;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.cta:hover {
+  background-color: #c60;
+}
+
+/* Services Section */
+.services {
+  text-align: center;
+  background: #eaeaea;
+}
+
+.services h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  padding-block: 100px 40px;
+}
+
+/* Container for services grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px 15%;
+    background-color: rgb(253, 176, 60);
+}
+
+/* Service card styling */
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+}
+
+/* Icon styling */
+.service-icon {
+    margin-bottom: 15px;
+}
+
+.service-icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%; /* Round the icon */
+    border: 3px solid #ddd;
+    padding: 5px;
+}
+
+/* Title styling */
+.service-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Description styling */
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+/* About Us Section */
+.about {
+    padding: 50px;
+    text-align: center;
+    background-color: #eaeaea;
+}
+
+.contact {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+       background-position: bottom right;
+       padding-inline: 5%;
+    }
+    nav {
+      margin: 20px 0;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transition: all 300ms ease-in-out;
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -ms-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+}
+
+    .burger {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+}
