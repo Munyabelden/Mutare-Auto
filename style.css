@@ -108,6 +108,27 @@ nav {
   background-color: #c60;
 }
 
+.swiper-container {
+  width: 100%;
+  padding: 80px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  text-align: center;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
 /* Services Section */
 .services {
   text-align: center;
