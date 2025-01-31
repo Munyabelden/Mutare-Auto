@@ -32,15 +32,19 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
-  margin: 20px 15%;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
+  padding: 20px 15%;
+  position: fixed;
+  top: 0;
   display: flex;
   align-items: center;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  border: 2px solid #f90;
+  padding: 20px;
 }
 
 .logo h1 {
@@ -80,6 +84,15 @@ nav {
 }
 
 /* Hero Section */
+
+.home {
+  background-color: rgba(148, 121, 82, 0.5);
+  color: white;
+  text-align: center;
+  padding: 40px 15%;
+  margin-top: 40px;
+}
+
 .hero {
   color: white;
   text-align: center;
@@ -90,7 +103,7 @@ nav {
   margin-top: 170px;
 }
 
-.hero h2 {  
+.hero h1 {  
   font-size: 30px;
   font-weight: 800;
 }
@@ -106,6 +119,14 @@ nav {
 
 .cta:hover {
   background-color: #c60;
+}
+
+.slider h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  padding-block: 50px 40px;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .swiper-container {
@@ -132,13 +153,14 @@ img {
 /* Services Section */
 .services {
   text-align: center;
-  background: #eaeaea;
+  background: rgb(253, 176, 60);
 }
 
 .services h2 {
   font-size: 3rem;
   font-weight: 800;
   padding-block: 100px 40px;
+  color: #14120e;
 }
 
 /* Container for services grid */
@@ -152,7 +174,7 @@ img {
 
 /* Service card styling */
 .service-card {
-    background-color: #fff;
+    background: #f7efe5;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
